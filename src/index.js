@@ -1,13 +1,15 @@
+import { hot } from 'react-hot-loader/root'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import 'antd/dist/antd.css'
 import { GlobalStyle } from './styles'
 
-ReactDOM.render(
+const HotReloadingApp = hot(() => (
   <>
     <App />
     <GlobalStyle />
-  </>,
-  document.getElementById('root')
-)
+  </>
+))
+
+ReactDOM.render(<HotReloadingApp />, document.getElementById('root'))
