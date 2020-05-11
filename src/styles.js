@@ -27,3 +27,8 @@ export const Subtitle = styled.div`
   font-size: 24px;
   font-weight: lighter;
 `
+
+export const ContactAndConnectLinksContainer = styled.div`
+  padding-top: 24px;
+  padding-bottom: 24px;
+`
