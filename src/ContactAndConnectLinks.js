@@ -6,16 +6,16 @@ import { Emoji } from './Emoji'
 export const ContactAndConnectLinks = () => {
   return (
     <ContactAndConnectLinksContainer>
-      <a
-        href="http://eepurl.com/g27KZX"
-        target="_blank"
-        rel="noopener noreferrer"
+      <Button onClick={() => window.open('http://eepurl.com/g27KZX')}>
+        <Emoji symbol="📮" label="mail" fontSize={16} />
+        "Keep me updated via email!"
+      </Button>
+      <Button
+        onClick={() => window.open('https://medium.com/show-me-the-system')}
       >
-        <Button>
-          <Emoji symbol="📮" label="mail" fontSize={16} />
-          Keep me updated via email!
-        </Button>
-      </a>
+        <Emoji symbol="📜" label="mail" fontSize={16} />
+        Read the Manifesto on Medium
+      </Button>
     </ContactAndConnectLinksContainer>
   )
 }

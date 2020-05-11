@@ -29,6 +29,15 @@ export const Subtitle = styled.div`
 `
 
 export const ContactAndConnectLinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  max-width: 400px;
+
+  & > * {
+    margin-top: 24px;
+    //margin-bottom: 24px;
+  }
 `
