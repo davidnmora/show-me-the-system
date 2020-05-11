@@ -8,7 +8,7 @@ export const ContactAndConnectLinks = () => {
     <ContactAndConnectLinksContainer>
       <Button onClick={() => window.open('http://eepurl.com/g27KZX')}>
         <Emoji symbol="📮" label="mail" fontSize={16} />
-        "Keep me updated via email!"
+        Stay me updated via email!
       </Button>
       <Button
         onClick={() => window.open('https://medium.com/show-me-the-system')}
